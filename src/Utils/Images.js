@@ -16,21 +16,20 @@ import fod from "../assets/images/food.png";
 import fdft from "../assets/images/fdft.png"
 import con from "../assets/images/c.jpg"
 
-
 export const profilePic = profil;
 export const logo = lg;
 export const html = htm;
 export const css = cs;
 export const js = jss;
 export const react = reacts;
-export const pr = wd1;
-export const pr1 = wd2;
-export const pr2 = wd3;
+export const purchaseRequisition1 = wd1;
+export const purchaseRequisition2 = wd2;
+export const purchaseRequisition3 = wd3;
 export const mail = mail1;
 export const msg = ms;
 export const todo = todos;
 export const call = phn;
-export const loc = loca;
+export const location = loca;
 export const food = fod;
 export const foodft = fdft;
 export const contact = con;
