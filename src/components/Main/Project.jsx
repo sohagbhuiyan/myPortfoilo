@@ -12,7 +12,7 @@ const Project = () => {
         },
         {
             images: purchaseRequisition1,
-            title: "Purchase Requisition",
+            title: "PURCHASE REQUISITION",
             desc: "This is the first page of Purchase Requisition. Users can easily move from one folder to another.",
             width: "400px",
         },
@@ -33,9 +33,9 @@ const Project = () => {
     return (
         <>
             <div>
-                <p className='text-6xl py-5 text-cpink-200 text-center font-bold'>Here is My Projects</p>
+                <p className='text-6xl py-5 text-cpink-200 text-center items-center font-bold'>Here is My Projects</p>
                 
-        <div className='px-2 '>
+        <div className='px-10 py-10 '>
             {allProject.map((proj, index) => (
                 <ProjectParent key={index} images={proj.images} title={proj.title} desc={proj.desc} width={proj.width} />
             ))}

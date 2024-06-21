@@ -2,6 +2,7 @@ import Nav from "./components/Main/Nav"
 import Home from "./components/Main/Home"
 import Skills from "./components/Main/Skills"
 import Project from "./components/Main/Project"
+import Contact from "./components/Main/Contact"
 function App() {
 
   return (
@@ -9,7 +10,8 @@ function App() {
       <Nav/>
       <Home/>
       <Skills />
-      <Project/>
+      <Project />
+      <Contact/>
     </>
   )
 }
