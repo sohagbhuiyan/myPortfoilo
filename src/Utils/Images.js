@@ -15,6 +15,10 @@ import loca from "../assets/images/pp.jpg";
 import fod from "../assets/images/food.png";
 import fdft from "../assets/images/fdft.png"
 import con from "../assets/images/c.jpg"
+import fb from "../assets/images/fb.png"
+import ln from "../assets/images/ln.png"
+import gt from "../assets/images/gt.png"
+import tw from "../assets/images/tw.png"
 
 export const profilePic = profil;
 export const logo = lg;
@@ -33,3 +37,7 @@ export const location = loca;
 export const food = fod;
 export const foodft = fdft;
 export const contact = con;
+export const facebok = fb;
+export const linkedin = ln;
+export const github = gt;
+export const tweeter = tw;

@@ -26,15 +26,15 @@ const Chat = () => {
         }
       };
     return (
-        <div className='sm:w-1/2 p-2 absolute right-2 text-gray-100 text-xs md:text-lg'>
+        <div className='sm:w-1/2 flex-col p-2 sm:absolute right-2 text-gray-100 text-xs md:text-lg mb-20'>
              <form onSubmit={onSubmit} className="px-4">
             <label htmlFor=""> Your Name: </label><br />
             <input type="text" name="name" placeholder="Enter your name" className='w-3/4 outline-none bg-indigo-200 text-black placeholder-yellow-900' /> <br />
             <label htmlFor=""> Your Email: </label><br />
             <input type="text" name="email" placeholder="Enter your Email" className='w-3/4 outline-none bg-indigo-200 text-black placeholder-yellow-900' required/><br />
-            <label htmlFor="">Write your message:</label><br />
+            <label htmlFor=""> Write your message:</label><br />
             <textarea type="text" name="message" placeholder="Write here!" className='h-14 w-3/4 outline-none bg-indigo-200 text-black placeholder-yellow-900' /><br />
-            <button  type="submit" className="bg-sky-600 mt-2 p-1 text-xl font-medium rounded-lg cursor-pointer hover:bg-sky-500">Submit</button>
+            <button  type="submit" className="bg-sky-600 mt-2 p-1 sm:text-xl font-medium rounded-lg cursor-pointer hover:bg-sky-500">Submit</button>
         </form>
         </div>
     );
