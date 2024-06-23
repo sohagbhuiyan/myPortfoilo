@@ -29,7 +29,7 @@ const Skills = () => {
 
     return (
         <div className=''>
-            <p className='text-7xl p-4 font-bold text-center text-pink-800'>What I do</p>
+            <p className='md:text-6xl text-4xl p-4 font-bold text-center text-cpink-200'>What I do</p>
             <p className='text-lg p-10 text-center sm:text-2xl text-gray-100'>
                 I am a skilled and passionate web developer with experience in creating
                 visually appealing and user-friendly websites. I have a strong

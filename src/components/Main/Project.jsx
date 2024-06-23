@@ -39,7 +39,7 @@ const Project = () => {
     return (
         <>
         <div>
-            <p className='text-6xl py-5 text-cpink-200 text-center items-center font-bold'>Here is My Projects</p>    
+            <p className='md:text-6xl text-4xl py-5 text-cpink-200 text-center items-center font-bold'>Here is My Projects</p>    
             <div className='px-10 py-10 '>
                 {allProject.map((proj, index) => (
                     <ProjectParent
