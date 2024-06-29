@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { FaXmark } from "react-icons/fa6";
 import { logo } from "../../Utils/Images";
@@ -18,7 +18,7 @@ const Nav = () => {
   // Function to handle CV download
   const handleCvDownload = () => {
     window.open(
-      "https://drive.google.com/file/d/1LLslhA-C1LJe0sSR6GvT0Ld7UOZMtPl7/view?usp=sharing",
+      "https://drive.google.com/file/d/1JPT2Vn58L4Z2h7B7nuAQxy7RcfuYmUCM/view",
       "_blank"
     );
   };
@@ -28,13 +28,27 @@ const Nav = () => {
       <div className="py-2">
         <img src={logo} alt="Logo" className="h-12 md:h-14 px-10" />
       </div>
-      <div onClick={() => setOpen(!open)} className=' text-white cursor-pointer absolute right-8 top-5 md:hidden'>
-        {open ? <FaXmark className='hover:text-red-400' /> : <FiMenu className='hover:text-red-400' />}
+      <div
+        onClick={() => setOpen(!open)}
+        className=" text-white cursor-pointer absolute right-8 top-5 md:hidden"
+      >
+        {open ? (
+          <FaXmark className="hover:text-red-400" />
+        ) : (
+          <FiMenu className="hover:text-red-400" />
+        )}
       </div>
       <div className="">
-        <ul className={`md:flex md:px-20 absolute md:static md:space-x-8 md:pl-0 pl-14 py-2 left-0 w-full md:w-auto transition-all ${open ? "top-16 bg-slate-100" : "top-[-420px]"}`}>
+        <ul
+          className={`md:flex md:px-20 absolute md:static md:space-x-8 md:pl-0 pl-14 py-2 left-0 w-full md:w-auto transition-all ${
+            open ? "top-16 bg-slate-100" : "top-[-420px]"
+          }`}
+        >
           {Header.map((nav, index) => (
-            <li key={index} className="md:text-white text-lg transform transition-transform duration-300 hover:scale-110 text-slate-950 font-medium hover:text-cpink-200 cursor-pointer">
+            <li
+              key={index}
+              className="md:text-white text-lg transform transition-transform duration-300 hover:scale-110 text-slate-950 font-medium hover:text-cpink-200 cursor-pointer"
+            >
               {nav.isDownload ? (
                 <a
                   href="#"
@@ -43,7 +57,6 @@ const Nav = () => {
                     handleCvDownload(); // Trigger CV download
                     setOpen(false); // Close the menu
                   }}
-                
                 >
                   {nav.name}
                 </a>
