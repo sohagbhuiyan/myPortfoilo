@@ -10,7 +10,12 @@ import todos from "../assets/images/t1.png"
 import fod from "../assets/images/food.png";
 import con from "../assets/images/c.jpg"
 import ecom from "../assets/images/ecommerce.png"
+import woo from "../assets/images/woople.png"
+import nex from "../assets/images/nexcent.png"
 
+
+export const woople = woo;
+export const nexcent = nex;
 export const ecommerce = ecom;
 export const profilePic = profil;
 export const logo = lg;

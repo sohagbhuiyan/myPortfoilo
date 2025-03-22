@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { FaGithub } from 'react-icons/fa';
 import { BsArrowUpRightSquareFill } from 'react-icons/bs';
-import { purchaseRequisition1, food, todo, ecommerce } from '../../Utils/Images';
+import { purchaseRequisition1, food, todo, ecommerce, nexcent, woople } from '../../Utils/Images';
 
 const ProjectCard = ({ images, title, desc, live, github }) => {
     return (
@@ -31,6 +31,20 @@ const Project = () => {
             desc: 'Manage product data dynamically while allowing users to browse, view specifications, and add items to their cart.',
             live: 'https://saverfavor-e-commerce.vercel.app/',
             github: 'https://github.com/sohagbhuiyan/saverfavor_e-commerce.git',
+        },
+        {
+            images: nexcent,
+            title: 'Nextcent',
+            desc: 'A landing website what we provided and what our service.',
+            live: 'https://landing-website-design.vercel.app/',
+            github: 'https://github.com/sohagbhuiyan/Landing_website_design',
+        },
+        {
+            images: woople,
+            title: 'Woople',
+            desc: 'Website design of companies achivements and what their services',
+            live: 'https://wppool-task-wine.vercel.app/',
+            github: 'https://github.com/sohagbhuiyan/Wppool_Task',
         },
         {
             images: todo,
