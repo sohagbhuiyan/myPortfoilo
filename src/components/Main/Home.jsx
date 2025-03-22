@@ -7,7 +7,7 @@ const Home = () => {
             <div className='container mx-auto flex flex-col md:flex-row items-center justify-between'>
                 {/* Text Content */}
                 <div className='text-center md:text-left md:w-1/2 md:pr-10'>
-                    <p className='text-4xl md:text-6xl font-bold text-white mb-4'>
+                    <p className='text-4xl md:text-5xl font-bold text-white mb-4'>
                         Hello, <br /> I am <span className='text-cpink-200'>Sohag Bhuiyan</span>
                     </p>
                     <p className='text-xl md:text-2xl font-medium text-gray-300 mb-6'>
