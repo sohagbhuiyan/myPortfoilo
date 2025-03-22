@@ -26,17 +26,46 @@ const Chat = () => {
         }
       };
     return (
-        <div className='sm:w-1/2  flex-col p-2 sm:absolute right-2 text-gray-100 text-xs md:text-lg md:mb-20'>
-             <form onSubmit={onSubmit} className="px-4">
-            <label htmlFor=""> Your Name: </label><br />
-            <input type="text" name="name" placeholder="Enter your name" className='w-3/4 outline-none bg-indigo-200 text-black placeholder-yellow-900' /> <br />
-            <label htmlFor=""> Your Email: </label><br />
-            <input type="text" name="email" placeholder="Enter your Email" className='w-3/4 outline-none bg-indigo-200 text-black placeholder-yellow-900' required/><br />
-            <label htmlFor=""> Write your message:</label><br />
-            <textarea type="text" name="message" placeholder="Write here!" className='h-14 w-3/4 outline-none bg-indigo-200 text-black placeholder-yellow-900' /><br />
-            <button  type="submit" className="bg-sky-600 mt-2 p-1 sm:text-xl font-medium rounded-lg cursor-pointer hover:bg-sky-500">Submit</button>
-        </form>
-        </div>
+      <div className="bg-gray-800 p-8 mt-10 items-center rounded-lg shadow-lg max-w-lg ">
+      <form onSubmit={onSubmit} className="space-y-4">
+          <div>
+              <label className="block text-gray-200 font-medium mb-1">Your Name:</label>
+              <input 
+                  type="text" 
+                  name="name" 
+                  placeholder="Enter your name" 
+                  className="w-full px-3 py-2 bg-gray-200 text-gray-900 placeholder-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500" 
+                  required 
+              />
+          </div>
+          <div>
+              <label className="block text-gray-200 font-medium mb-1">Your Email:</label>
+              <input 
+                  type="email" 
+                  name="email" 
+                  placeholder="Enter your email" 
+                  className="w-full px-3 py-2 bg-gray-200 text-gray-900 placeholder-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500" 
+                  required 
+              />
+          </div>
+          <div>
+              <label className="block text-gray-200 font-medium mb-1">Write your message:</label>
+              <textarea 
+                  name="message" 
+                  placeholder="Write here..." 
+                  className="w-full px-3 py-2 bg-gray-200 text-gray-900 placeholder-gray-600 rounded-md h-24 focus:outline-none focus:ring-2 focus:ring-sky-500 resize-none" 
+                  required
+              ></textarea>
+          </div>
+          <button 
+              type="submit" 
+              className="w-full bg-purple-600 text-white py-2 text-lg font-semibold rounded-lg transition duration-300 hover:bg-purple-500"
+          >
+              Submit
+          </button>
+      </form>
+  </div>
+  
     );
 };
 

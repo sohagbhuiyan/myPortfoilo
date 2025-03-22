@@ -1,60 +1,70 @@
-import React from 'react';
-import ProjectParent from './ProjectParent';
-import { purchaseRequisition1, food, foodft, todo } from '../../Utils/Images';
+import React from 'react'; 
+import { FaGithub } from 'react-icons/fa';
+import { BsArrowUpRightSquareFill } from 'react-icons/bs';
+import { purchaseRequisition1, food, todo, ecommerce } from '../../Utils/Images';
+
+const ProjectCard = ({ images, title, desc, live, github }) => {
+    return (
+        <div className='bg-gray-900 p-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105'>
+            <img src={images} alt={title} className='w-full h-56 object-cover rounded-lg mb-4' />
+            <h3 className='text-xl font-semibold text-yellow-300'>{title}</h3>
+            <p className='text-sm text-gray-300 my-2'>{desc}</p>
+            <div className='flex justify-between items-center mt-4'>
+                <a href={live} target='_blank' rel='noopener noreferrer' className='flex items-center text-blue-400 hover:text-blue-300 transition-all'>
+                    <span className='font-medium'>Live</span>
+                    <BsArrowUpRightSquareFill className='ml-1 text-xl' />
+                </a>
+                <a href={github} target='_blank' rel='noopener noreferrer' className='flex items-center text-gray-400 hover:text-gray-300 transition-all'>
+                    <FaGithub className='mr-1 text-xl' />
+                    <span className='font-medium'>GitHub</span>
+                </a>
+            </div>
+        </div>
+    );
+};
 
 const Project = () => {
-    const allProject = [
+    const allProjects = [
         {
-            images: todo,
-            title: "TO-DO",
-            desc: "It has two tabs to add list items. One is for personal lists and the other is for professional lists. It can mark, checked & deletetable",
-            width: "400px ",
-            live: "https://sohagbhuiyan.github.io/TODO/",
-            github: "https://github.com/sohagbhuiyan/TODO",
+            images: ecommerce,
+            title: 'E-commerce',
+            desc: 'Manage product data dynamically while allowing users to browse, view specifications, and add items to their cart.',
+            live: 'https://saverfavor-e-commerce.vercel.app/',
+            github: 'https://github.com/sohagbhuiyan/saverfavor_e-commerce.git',
         },
         {
-            images: purchaseRequisition1,
-            title: "PURCHASE REQUISITION",
-            desc: "This is the first page of Purchase Requisition. Users can easily move from one folder to another.",
-            width: "400px",
-            live: "https://window-design-rho.vercel.app/",
-            github:"https://github.com/sohagbhuiyan/window-Design"
+            images: todo,
+            title: 'To-Do App',
+            desc: 'Features personal & professional lists with options to mark, check, and delete tasks.',
+            live: 'https://sohagbhuiyan.github.io/TODO/',
+            github: 'https://github.com/sohagbhuiyan/TODO',
         },
         {
             images: food,
-            title: "FOOD DELIVERY",
-            desc: "This is a food delivery website. Users can view restaurant names, details, and their services.",
-            width: "400px",
-            live: "https://task-food-delivery.vercel.app/",
-            github:"https://github.com/sohagbhuiyan/task-FoodDelivery"
+            title: 'Food Delivery',
+            desc: 'Users can view restaurants, their details, and services on this food delivery website.',
+            live: 'https://task-food-delivery.vercel.app/',
+            github: 'https://github.com/sohagbhuiyan/task-FoodDelivery',
         },
         {
-            images: foodft,
-            title: "FOOD DELIVERY - Footer",
-            desc: "This is the footer section of the food delivery website. Users can view additional restaurant details and services.",
-            width:"400px",
+            images: purchaseRequisition1,
+            title: 'Purchase Requisition',
+            desc: 'Users can navigate easily between folders on this purchase requisition page.',
+            live: 'https://window-design-rho.vercel.app/',
+            github: 'https://github.com/sohagbhuiyan/window-Design',
         },
     ];
 
     return (
-        <>
-        <div>
-            <p className='md:text-6xl text-4xl py-5 text-cpink-200 text-center items-center font-bold'>Here is My Projects</p>    
-            <div className='px-10 py-10 '>
-                {allProject.map((proj, index) => (
-                    <ProjectParent
-                        key={index}
-                        images={proj.images}
-                        title={proj.title}
-                        desc={proj.desc}
-                        width={proj.width}
-                        live={proj.live}
-                        github={proj.github}
-                    />
+        <div className='py-10 px-6 md:px-16 bg-gray-950 min-h-screen'>
+            <h2 className='text-4xl md:text-6xl font-bold text-center text-cpink-200 mb-10'>Here are My Projects</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                {allProjects.map((proj, index) => (
+                    <ProjectCard key={index} {...proj} />
                 ))}
             </div>
         </div>
-        </>
     );
 };
+
 export default Project;
