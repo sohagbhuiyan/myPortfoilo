@@ -11,7 +11,7 @@ const Home = () => {
                         Hello, <br /> I am <span className='text-cpink-200'>Sohag Bhuiyan</span>
                     </p>
                     <p className='text-xl md:text-2xl font-medium text-gray-300 mb-6'>
-                        Frontend Developer
+                        Software Developer
                     </p>
                     <p className='text-lg text-gray-400 leading-relaxed'>
                         I'm a passionate Frontend Developer skilled in React.js, Tailwind CSS, and UI/UX design. 
@@ -19,13 +19,13 @@ const Home = () => {
                         Constantly exploring new technologies, I strive to create engaging digital experiences.
                     </p>
                     {/* Call-to-Action Button (Optional) */}
-                    <button className='mt-8 bg-cpink-200 text-white font-semibold py-3 px-8 rounded-full hover:bg-cpink-300 transition duration-300'>
+                    <button className='mt-8 bg-cpink-200 text-white font-semibold py-3 px-8 rounded-full hover:bg-red-700 transition duration-300'>
                         View My Work
                     </button>
                 </div>
 
                 {/* Profile Picture */}
-                <div className='mt-10 md:mt-0 md:w-1/2 flex justify-center md:justify-end'>
+                <div className='mt-10 md:mt-0 md:w-1/2 px-10 flex justify-center md:justify-end'>
                     <img 
                         src={profilePic} 
                         alt="Sohag Bhuiyan" 

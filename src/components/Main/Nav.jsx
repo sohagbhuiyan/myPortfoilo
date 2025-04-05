@@ -18,7 +18,7 @@ const Nav = () => {
   // Function to handle CV download
   const handleCvDownload = () => {
     window.open(
-      "https://drive.google.com/file/d/1JPT2Vn58L4Z2h7B7nuAQxy7RcfuYmUCM/view",
+      "https://drive.google.com/file/d/1yV3hHOLtuwJe3l-sbhYMvaxwSrzWnyoT/view?usp=sharing",
       "_blank"
     );
   };
