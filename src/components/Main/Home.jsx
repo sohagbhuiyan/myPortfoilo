@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
     return (
-        <div className='min-h-screen px-6 md:px-12 flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800 p-6'>
+        <div className='min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800 p-6'>
             <div className='container mx-auto flex flex-col md:flex-row items-center justify-between'>
 
                 {/* Text Content with animation */}
