@@ -1,4 +1,4 @@
-import React from 'react'; 
+
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import { msg } from '../../Utils/Images';
 import Chat from './Chat';    

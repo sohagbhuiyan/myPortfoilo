@@ -1,5 +1,5 @@
-import React from 'react';
-import { css, html, js, react } from '../../Utils/Images';
+
+import {  css, ios, js, react, redux, swift } from '../../Utils/Images';
 import SkillParent from './SkillParent'; // Adjust the import path as needed
 
 const Skills = () => {
@@ -11,27 +11,32 @@ const Skills = () => {
       ];
     // Define the data for skills
     const skillsData = [
-        { 
-            images: react, 
-            title: 'React Js', 
-            text: 'React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.' 
-        },
-        { 
-            images: js, 
-            title: 'JavaScript', 
-            text: 'JavaScript is a programming language that conforms to the ECMAScript specification. It is high-level, often just-in-time compiled, and multi-paradigm.' 
-        },
-        { 
-            images: css, 
-            title: 'Tailwind/CSS', 
-            text: 'Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. It is a highly customizable, low-level CSS framework.' 
-        },
-        { 
-            images: html, 
-            title: 'HTML', 
-            text: 'HTML is the standard markup language for creating web pages and web applications. It describes the structure of a Web page.' 
-        }
-    ];
+      { 
+          images: ios, 
+          title: 'iOS Development', 
+          text: 'Proficient in Swift and SwiftUI for building native iOS applications. Experienced in Core Data, ARKit, and integrating REST APIs for full-featured mobile solutions.' 
+      },
+      { 
+          images: redux, 
+          title: 'React & Redux Toolkit', 
+          text: 'Expertise in state management using Redux Toolkit for complex React applications. Skilled in middleware integration and optimized state updates.' 
+      },
+      {
+        images: css,
+        title: 'Tailwind CSS',
+        text: 'Proficient in building responsive and modern UI using Tailwind CSS. Skilled in customizing utility classes, optimizing design systems, and integrating seamlessly with React components.'
+      },
+      { 
+          images: swift, 
+          title: 'Swift Programming', 
+          text: 'Deep understanding of Swift syntax and language features. Proficient in protocol-oriented programming, memory management, and concurrency with async/await.' 
+      },
+      { 
+          images: js, 
+          title: 'JavaScript ES6+', 
+          text: 'Strong foundation in modern JavaScript including async programming, DOM manipulation, and ES6+ features. Experienced in functional programming patterns and TypeScript integration.' 
+      }
+  ];
 
     return (
         <div className='p-4 mt-2'>

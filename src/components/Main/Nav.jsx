@@ -1,13 +1,14 @@
-import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { FaXmark } from "react-icons/fa6";
 import { logo } from "../../Utils/Images";
 import { Link as ScrollLink } from "react-scroll";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Nav = () => {
   const Header = [
     { name: "Home", link: "home" },
-    { name: "Project", link: "project" },
+    { name: "Projects", link: "project" },
     { name: "Skills", link: "skills" },
     { name: "Education", link: "education" },
     { name: "Contact", link: "contact" },
@@ -15,8 +16,8 @@ const Nav = () => {
   ];
 
   const [open, setOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
 
-  // Function to handle CV download
   const handleCvDownload = () => {
     window.open(
       "https://drive.google.com/file/d/1yV3hHOLtuwJe3l-sbhYMvaxwSrzWnyoT/view?usp=sharing",
@@ -25,59 +26,110 @@ const Nav = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 md:flex md:py-4 bg-slate-800 justify-between px-4 h-14 md:h-16 items-center">
-      <div className="py-2">
-        <img src={logo} alt="Logo" className="h-12 md:h-14 px-10" />
-      </div>
-      <div
-        onClick={() => setOpen(!open)}
-        className=" text-white cursor-pointer absolute right-8 top-5 md:hidden"
-      >
-        {open ? (
-          <FaXmark className="hover:text-red-400" />
-        ) : (
-          <FiMenu className="hover:text-red-400" />
-        )}
-      </div>
-      <div className="">
-        <ul
-          className={`md:flex md:px-20 absolute md:static md:space-x-8 md:pl-0 pl-14 py-2 left-0 w-full md:w-auto transition-all ${
-            open ? "top-16 bg-slate-100" : "top-[-420px]"
-          }`}
+    <nav className="sticky top-0 z-50 bg-slate-800 backdrop-blur-lg border-b border-slate-700/50">
+      <div className="container mx-auto flex justify-between items-center px-4 py-2 md:py-4">
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="flex items-center"
         >
+          <img 
+            src={logo} 
+            alt="Logo" 
+            className="h-10 md:h-12 transition-transform duration-200 hover:rotate-[15deg]" 
+          />
+        </motion.div>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center space-x-6">
           {Header.map((nav, index) => (
-            <li
+            <div
               key={index}
-              className="md:text-white text-lg transform transition-transform duration-300 hover:scale-110 text-slate-950 font-medium hover:text-cpink-200 cursor-pointer"
+              className="relative"
             >
               {nav.isDownload ? (
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault(); // Prevent default anchor behavior
-                    handleCvDownload(); // Trigger CV download
-                    setOpen(false); // Close the menu
-                  }}
+                <button
+                  onClick={handleCvDownload}
+                  className="px-4 py-2 bg-gradient-to-r from-cpink-200 to-olive-200 text-white rounded-full 
+                            shadow-md hover:shadow-lg transition-all duration-150"
                 >
                   {nav.name}
-                </a>
+                </button>
               ) : (
                 <ScrollLink
-                  to={nav.link} // Use the link property for ScrollLink
+                  to={nav.link}
                   smooth={true}
-                  duration={200}
+                  duration={100}
                   spy={true}
-                  offset={-65} // Adjust offset for sticky header
-                  onClick={() => setOpen(false)} // Close menu on click
+                  offset={-100}
+                  // onSetActive={() => setActiveLink(nav.link)}
+                  className={`px-4 py-2 cursor-pointer text-lg font-medium ${
+                    activeLink === nav.link 
+                      ? "text-cpink-200 border-b-2 border-cpink-200"
+                      : "text-white hover:text-cpink-200/80"
+                  } transition duration-150`}
                 >
                   {nav.name}
                 </ScrollLink>
               )}
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
+
+        {/* Mobile Toggle Button */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-2xl text-white p-2 hover:text-cpink-200  duration-100"
+          aria-label="Navigation menu"
+        >
+          {open ? <FaXmark /> : <FiMenu />}
+        </button>
+
+        {/* Mobile Menu */}
+        <div className={`md:hidden fixed top-16 left-0 right-0 bg-slate-800/95 backdrop-blur-xl 
+                        ${open ? "block" : "hidden"} transition-opacity duration-100`}>
+          <ul className="flex flex-col items-center py-2 space-y-1">
+            {Header.map((nav, index) => (
+              <li
+                key={index}
+                className="w-full text-center"
+              >
+                {nav.isDownload ? (
+                  <button
+                    onClick={() => {
+                      handleCvDownload();
+                      setOpen(false);
+                    }}
+                    className="w-full py-2.5 text-lg font-medium text-white bg-cpink-200/90 hover:bg-cpink-200 transition-colors duration-150"
+                  >
+                    {nav.name}
+                  </button>
+                ) : (
+                  <ScrollLink
+                    to={nav.link}
+                    smooth={true}
+                    duration={100}
+                    spy={true}
+                    offset={-100}
+                    onSetActive={() => {
+                      setActiveLink(nav.link);
+                      setOpen(false);
+                    }}
+                    className={`block py-2.5 text-lg font-medium ${
+                      activeLink === nav.link
+                        ? "text-cpink-200"
+                        : "text-white hover:text-cpink-200/80"
+                    } transition-colors duration-100`}
+                  >
+                    {nav.name}
+                  </ScrollLink>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
+
 export default Nav;

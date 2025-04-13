@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { profilePic, keyboard } from '../../Utils/Images';
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';

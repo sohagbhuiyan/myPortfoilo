@@ -3,6 +3,7 @@ import lg from "../assets/images/e.png";
 import htm from "../assets/images/html.jpg";
 import cs from "../assets/images/css.webp";
 import jss from "../assets/images/js.png";
+import redx from "../assets/images/r.png";
 import reacts from "../assets/images/re.png";
 import wd1 from "../assets/images/wd1.png";
 import ms from "../assets/images/s.webp";
@@ -13,7 +14,8 @@ import ecom from "../assets/images/ecommerce.png"
 import woo from "../assets/images/woople.png"
 import nex from "../assets/images/nexcent.png"
 import kk from "../assets/images/kk.jpg"
-
+import is from "../assets/images/ios.webp"
+import swft from "../assets/images/sw.png"
 
 export const woople = woo;
 export const nexcent = nex;
@@ -24,9 +26,12 @@ export const html = htm;
 export const css = cs;
 export const js = jss;
 export const react = reacts;
+export const redux = redx;
 export const purchaseRequisition1 = wd1;
 export const msg = ms;
 export const todo = todos;
 export const food = fod;
 export const contact = con;
 export const keyboard = kk;
+export const ios = is;
+export const swift = swft;
