@@ -1,6 +1,6 @@
 import { FiMenu } from "react-icons/fi";
 import { FaXmark } from "react-icons/fa6";
-import { logo } from "../../Utils/Images";
+import { logo, p1, p2 } from "../../Utils/Images";
 import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -33,9 +33,9 @@ const Nav = () => {
           className="flex items-center"
         >
           <img 
-            src={logo} 
+            src={p2} 
             alt="Logo" 
-            className="h-10 md:h-12 transition-transform duration-200 hover:rotate-[15deg]" 
+            className="h-10 md:h-12 transition-transform duration-200 hover:rotate-[5deg]" 
           />
         </motion.div>
 
@@ -60,8 +60,8 @@ const Nav = () => {
                   smooth={true}
                   duration={300}
                   spy={true}
-                  offset={-100}
-                  // onSetActive={() => setActiveLink(nav.link)}
+                  offset={-80}
+                  onSetActive={() => setActiveLink(nav.link)}
                   className={`px-4 py-2 cursor-pointer text-lg font-medium ${
                     activeLink === nav.link 
                       ? "text-cpink-200 border-b-2 border-cpink-200"
@@ -109,7 +109,7 @@ const Nav = () => {
                     smooth={true}
                     duration={300}
                     spy={true}
-                    offset={-100}
+                    offset={-75}
                     onSetActive={() => {
                       setActiveLink(nav.link);
                       setOpen(false);
@@ -120,7 +120,7 @@ const Nav = () => {
                         : "text-white hover:text-cpink-200/80"
                     } transition-colors duration-100`}
                   >
-                    {nav.name}
+                    {nav.name}  
                   </ScrollLink>
                 )}
               </li>

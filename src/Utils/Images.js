@@ -1,4 +1,7 @@
 import profil from "../assets/images/ff.jpg";
+import prf from "../assets/images/lg.png";
+import prff from "../assets/images/lgg.png";
+
 import lg from "../assets/images/e.png";
 import htm from "../assets/images/html.jpg";
 import cs from "../assets/images/css.webp";
@@ -17,6 +20,8 @@ import kk from "../assets/images/kk.jpg"
 import is from "../assets/images/ios.webp"
 import swft from "../assets/images/sw.png"
 
+export const p1 = prf;
+export const p2 = prff;
 export const woople = woo;
 export const nexcent = nex;
 export const ecommerce = ecom;
