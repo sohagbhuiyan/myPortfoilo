@@ -3,6 +3,12 @@ import { css, html, js, react } from '../../Utils/Images';
 import SkillParent from './SkillParent'; // Adjust the import path as needed
 
 const Skills = () => {
+    const skills = [
+        "Swift", "C", "C++", "iOS", "Storyboard", "XIB", "NIB", 
+        "MVC", "MVP", "MVVM", "VIPER", "Git", "Xcode", 
+        "JIRA", "Slack", "Trello", "CocoaPods", "Carthage", 
+        "SPM", "OOP", "SOLID", "Auto Layout Constraints"
+      ];
     // Define the data for skills
     const skillsData = [
         { 
@@ -28,9 +34,10 @@ const Skills = () => {
     ];
 
     return (
-        <div className=''>
-            <p className='md:text-6xl text-4xl p-4 font-bold text-center text-cpink-200'>What I do</p>
-            <p className='text-lg p-10 text-center sm:text-2xl text-gray-100'>
+        <div className='p-4 mt-2'>
+            <p className='md:text-4xl text-2xl font-bold text-center text-cpink-200'>Skills</p>
+            <div className="w-16 mt-2 h-1 bg-cpink-200 mx-auto rounded-full"></div>
+            <p className='text-lg p-10 text-center sm:text-2xl text-gray-600'>
                 I am a skilled and passionate web developer with experience in creating
                 visually appealing and user-friendly websites. I have a strong
                 understanding of design and a keen eye for detail. I am proficient in
@@ -47,6 +54,20 @@ const Skills = () => {
                     />
                 ))}
             </div>
+            <section className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto text-center">
+        <div className="flex flex-wrap justify-center gap-4">
+          {skills.map((skill, index) => (
+            <span
+              key={index}
+              className="bg-gray-100 text-gray-800 px-4 py-2 rounded-md text-sm font-medium shadow-sm hover:bg-blue-100 transition"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
         </div>
     );
 };

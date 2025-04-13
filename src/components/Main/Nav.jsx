@@ -7,8 +7,9 @@ import { Link as ScrollLink } from "react-scroll";
 const Nav = () => {
   const Header = [
     { name: "Home", link: "home" },
-    { name: "Skills", link: "skills" },
     { name: "Project", link: "project" },
+    { name: "Skills", link: "skills" },
+    { name: "Education", link: "education" },
     { name: "Contact", link: "contact" },
     { name: "CV", link: "cv", isDownload: true },
   ];

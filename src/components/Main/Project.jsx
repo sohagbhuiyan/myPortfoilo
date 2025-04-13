@@ -5,16 +5,16 @@ import { purchaseRequisition1, food, todo, ecommerce, nexcent, woople } from '..
 
 const ProjectCard = ({ images, title, desc, live, github }) => {
     return (
-        <div className='bg-gray-900 p-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105'>
+        <div className='bg-gray-300 p-4 mt-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105'>
             <img src={images} alt={title} className='w-full h-56 object-cover rounded-lg mb-4' />
-            <h3 className='text-xl font-semibold text-yellow-300'>{title}</h3>
-            <p className='text-sm text-gray-300 my-2'>{desc}</p>
+            <h3 className='text-xl font-bold text-olive-200'>{title}</h3>
+            <p className='text-sm text-gray-800 my-2'>{desc}</p>
             <div className='flex justify-between items-center mt-4'>
-                <a href={live} target='_blank' rel='noopener noreferrer' className='flex items-center text-blue-400 hover:text-blue-300 transition-all'>
+                <a href={live} target='_blank' rel='noopener noreferrer' className='flex items-center text-green-700 hover:text-green-800 transition-all'>
                     <span className='font-medium'>Live</span>
                     <BsArrowUpRightSquareFill className='ml-1 text-xl' />
                 </a>
-                <a href={github} target='_blank' rel='noopener noreferrer' className='flex items-center text-gray-400 hover:text-gray-300 transition-all'>
+                <a href={github} target='_blank' rel='noopener noreferrer' className='flex items-center text-blue-700 hover:text-blue-800 transition-all'>
                     <FaGithub className='mr-1 text-xl' />
                     <span className='font-medium'>GitHub</span>
                 </a>
@@ -70,8 +70,9 @@ const Project = () => {
     ];
 
     return (
-        <div className='py-10 px-6 md:px-16 bg-gray-950 min-h-screen'>
-            <h2 className='text-4xl md:text-6xl font-bold text-center text-cpink-200 mb-10'>Here are My Projects</h2>
+        <div className='py-4 px-6 md:px-16 bg-gray-100 min-h-screen'>
+            <h2 className='md:text-4xl text-2xl font-bold text-center text-cpink-200 '>Here are My Projects</h2>
+            <div className="w-16 mt-2 h-1 bg-cpink-200 mx-auto rounded-full"></div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                 {allProjects.map((proj, index) => (
                     <ProjectCard key={index} {...proj} />

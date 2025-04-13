@@ -1,5 +1,5 @@
 import profil from "../assets/images/ff.jpg";
-import lg from "../assets/images/ee.png";
+import lg from "../assets/images/e.png";
 import htm from "../assets/images/html.jpg";
 import cs from "../assets/images/css.webp";
 import jss from "../assets/images/js.png";
@@ -12,6 +12,7 @@ import con from "../assets/images/c.jpg"
 import ecom from "../assets/images/ecommerce.png"
 import woo from "../assets/images/woople.png"
 import nex from "../assets/images/nexcent.png"
+import kk from "../assets/images/kk.jpg"
 
 
 export const woople = woo;
@@ -28,4 +29,4 @@ export const msg = ms;
 export const todo = todos;
 export const food = fod;
 export const contact = con;
-
+export const keyboard = kk;
