@@ -32,7 +32,7 @@ const Home = () => {
                             words={['Sohag Bhuiyan']}
                             loop={false}
                             cursor
-                            cursorStyle='_'
+                            cursorStyle='..'
                             typeSpeed={70}
                             deleteSpeed={50}
                             delaySpeed={1400}
