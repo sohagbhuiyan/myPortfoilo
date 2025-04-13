@@ -49,7 +49,7 @@ const Nav = () => {
               {nav.isDownload ? (
                 <button
                   onClick={handleCvDownload}
-                  className="px-4 py-2 bg-gradient-to-r from-cpink-200 to-olive-200 text-white rounded-full 
+                  className="px-4 py-2 bg-gradient-to-r from-cpink-200 to-blue-500 font-bold text-white rounded-full 
                             shadow-md hover:shadow-lg transition-all duration-150"
                 >
                   {nav.name}
@@ -58,7 +58,7 @@ const Nav = () => {
                 <ScrollLink
                   to={nav.link}
                   smooth={true}
-                  duration={100}
+                  duration={300}
                   spy={true}
                   offset={-100}
                   // onSetActive={() => setActiveLink(nav.link)}
@@ -85,7 +85,7 @@ const Nav = () => {
         </button>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden fixed top-16 left-0 right-0 bg-slate-800/95 backdrop-blur-xl 
+        <div className={`md:hidden fixed top-10 left-0 right-0 bg-slate-800/95 backdrop-blur-xl 
                         ${open ? "block" : "hidden"} transition-opacity duration-100`}>
           <ul className="flex flex-col items-center py-2 space-y-1">
             {Header.map((nav, index) => (
@@ -107,7 +107,7 @@ const Nav = () => {
                   <ScrollLink
                     to={nav.link}
                     smooth={true}
-                    duration={100}
+                    duration={300}
                     spy={true}
                     offset={-100}
                     onSetActive={() => {
