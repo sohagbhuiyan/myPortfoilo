@@ -1,5 +1,5 @@
 
-import { profilePic, keyboard } from '../../Utils/Images';
+import { profilePic, keyboard, profile } from '../../Utils/Images';
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -107,7 +107,7 @@ const Home = () => {
                     <div className='relative rounded-full p-1 bg-gradient-to-br from-[#F40469] to-[#217DBB]
                                  shadow-2xl hover:shadow-[#F40469]/40 transition-shadow'>
                         <motion.img
-                            src={profilePic}
+                            src={profile}
                             alt="Sohag Bhuiyan"
                             className='rounded-full w-64 h-64 md:w-96 md:h-96 border-4 border-white/20
                                     object-cover saturate-150 hover:saturate-200'
