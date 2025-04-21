@@ -5,14 +5,14 @@ import { purchaseRequisition1, food, todo, ecommerce, nexcent, woople } from '..
 
 const ProjectCard = ({ images, title, desc, live, github }) => {
     return (
-        <div className='bg-gray-300 p-4 mt-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105'>
-            <img src={images} alt={title} className='w-full h-56 object-cover rounded-lg mb-4' />
+        <div className='bg-gray-300 p-4 mt-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-104'>
+            <img src={images} alt={title} className='w-full h-48 object-cover rounded-lg mb-4' />
             <h3 className='text-xl font-bold text-olive-200'>{title}</h3>
             <p className='text-sm text-gray-800 my-2'>{desc}</p>
-            <div className='flex justify-between items-center mt-4'>
+            <div className='flex justify-between items-center px-4 py-2'>
                 <a href={live} target='_blank' rel='noopener noreferrer' className='flex items-center text-green-700 hover:text-green-800 transition-all'>
                     <span className='font-medium'>Live</span>
-                    <BsArrowUpRightSquareFill className='ml-1 text-xl' />
+                    <BsArrowUpRightSquareFill className='ml-2 text-xl' />
                 </a>
                 <a href={github} target='_blank' rel='noopener noreferrer' className='flex items-center text-blue-700 hover:text-blue-800 transition-all'>
                     <FaGithub className='mr-1 text-xl' />

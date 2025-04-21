@@ -1,9 +1,18 @@
 
-import { profilePic, keyboard, profile } from '../../Utils/Images';
+import { keyboard, profile } from '../../Utils/Images';
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
+
+    const scrollToContact = () => {
+        const contactSection = document.getElementById("contact");
+        contactSection?.scrollIntoView({ 
+            behavior: "smooth", 
+            block: "start",
+        });
+    };
+    
     return (
         <div className='min-h-screen flex items-center justify-center p-6 relative overflow-hidden'>
             {/* Color Overlay */}
@@ -59,10 +68,11 @@ const Home = () => {
 
                     <motion.button
                         className='bg-[#F40469] text-white font-bold py-3 px-8 rounded-full
-                                  relative overflow-hidden group hover:bg-[#217DBB] transition-all
-                                  duration-300 shadow-lg hover:shadow-xl hover:shadow-[#F40469]/30'
+                                  relative overflow-hidden group hover:bg-[#7cc0ff] transition-all
+                                  duration-300 shadow-lg hover:shadow-lg hover:shadow-[#F40469]/30'
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
+                        onClick={scrollToContact}
                     >
                         <span className='relative z-10'>Hire Me Now</span>
                         <div className='absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity'/>

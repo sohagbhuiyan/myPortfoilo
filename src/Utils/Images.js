@@ -7,7 +7,8 @@ import htm from "../assets/images/html.jpg";
 import cs from "../assets/images/css.webp";
 import jss from "../assets/images/js.png";
 import redx from "../assets/images/r.png";
-import reacts from "../assets/images/re.png";
+import reacts from "../assets/images/ree.png";
+import ret from "../assets/images/reee.png";
 import wd1 from "../assets/images/wd1.png";
 import ms from "../assets/images/s.webp";
 import todos from "../assets/images/t1.png"
@@ -32,6 +33,7 @@ export const html = htm;
 export const css = cs;
 export const js = jss;
 export const react = reacts;
+export const reactss = ret;
 export const redux = redx;
 export const purchaseRequisition1 = wd1;
 export const msg = ms;

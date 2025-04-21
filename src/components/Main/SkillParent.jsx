@@ -4,7 +4,7 @@ const SkillParent = ({ images, title, text }) => {
             <img 
                 src={images} 
                 alt="" 
-                className='h-16 w-24 md:h-24 md:w-32 p-2 md:rounded-xl bg-gray-100/50 shadow-inner border' 
+                className='h-16 w-18 md:h-24 md:w-26 p-2 md:rounded-xl bg-gray-100/50 shadow-inner border' 
             />
             <div className='mt-3 md:mt-0 md:ml-4 text-center md:text-left'>
                 <h3 className='text-lg font-semibold text-gray-800'>{title}</h3>

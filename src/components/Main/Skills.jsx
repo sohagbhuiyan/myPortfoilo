@@ -1,5 +1,5 @@
 
-import {  css, ios, js, react, redux, swift } from '../../Utils/Images';
+import {  css, ios, js, react, reactss, redux, swift } from '../../Utils/Images';
 import SkillParent from './SkillParent'; // Adjust the import path as needed
 
 const Skills = () => {
@@ -7,7 +7,9 @@ const Skills = () => {
         "Swift", "C", "C++", "iOS", "Storyboard", "XIB", "NIB", 
         "MVC", "MVP", "MVVM", "VIPER", "Git", "Xcode", 
         "JIRA", "Slack", "Trello", "CocoaPods", "Carthage", 
-        "SPM", "OOP", "SOLID", "Auto Layout Constraints"
+        "SPM", "OOP", "SOLID", "Auto Layout Constraints",
+        "React",
+        "Redux", "Javascript", "Tailwind", "HTML","CSS",
       ];
     // Define the data for skills
     const skillsData = [
@@ -17,15 +19,11 @@ const Skills = () => {
           text: 'Proficient in Swift and SwiftUI for building native iOS applications. Experienced in Core Data, ARKit, and integrating REST APIs for full-featured mobile solutions.' 
       },
       { 
-          images: redux, 
-          title: 'React & Redux Toolkit', 
+          images: react, 
+          title: 'Frontend Development', 
           text: 'Expertise in state management using Redux Toolkit for complex React applications. Skilled in middleware integration and optimized state updates.' 
       },
-      {
-        images: css,
-        title: 'Tailwind CSS',
-        text: 'Proficient in building responsive and modern UI using Tailwind CSS. Skilled in customizing utility classes, optimizing design systems, and integrating seamlessly with React components.'
-      },
+  
       { 
           images: swift, 
           title: 'Swift Programming', 
@@ -35,7 +33,12 @@ const Skills = () => {
           images: js, 
           title: 'JavaScript ES6+', 
           text: 'Strong foundation in modern JavaScript including async programming, DOM manipulation, and ES6+ features. Experienced in functional programming patterns and TypeScript integration.' 
-      }
+      },
+      {
+        images: css,
+        title: 'Tailwind CSS',
+        text: 'Proficient in building responsive and modern UI using Tailwind CSS. Skilled in customizing utility classes, optimizing design systems, and integrating seamlessly with React components.'
+      },
   ];
 
     return (
@@ -60,12 +63,12 @@ const Skills = () => {
                 ))}
             </div>
             <section className="bg-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center">
         <div className="flex flex-wrap justify-center gap-4">
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="bg-gray-100 text-gray-800 px-4 py-2 rounded-md text-sm font-medium shadow-sm hover:bg-blue-100 transition"
+              className="bg-gray-100 text-gray-800 px-4 py-3 rounded-md text-sm font-medium shadow-sm hover:bg-blue-100 transition"
             >
               {skill}
             </span>

@@ -4,7 +4,7 @@ const Education = () => {
         title: "BSc in Computer Science & Engineering (CSE)",
         institution: "Primeasia University",
         duration: "2017 - 2021",
-        degree: "Bachelor of Science"
+        degree: "Bachelor of Science (Engg)"
       },
       {
         title: "Higher Secondary Certificate (HSC)",

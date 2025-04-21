@@ -1,6 +1,6 @@
 import { FiMenu } from "react-icons/fi";
 import { FaXmark } from "react-icons/fa6";
-import { logo, p2 } from "../../Utils/Images";
+import { p2 } from "../../Utils/Images";
 import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -58,7 +58,7 @@ const Nav = () => {
                 <ScrollLink
                   to={nav.link}
                   smooth={true}
-                  duration={300}
+                  duration={600}
                   spy={true}
                   offset={-80}
                   // onSetActive={() => setActiveLink(nav.link)}
@@ -107,7 +107,7 @@ const Nav = () => {
                   <ScrollLink
                     to={nav.link}
                     smooth={true}
-                    duration={300}
+                    duration={600}
                     spy={true}
                     offset={-80}
                     onSetActive={() => {
