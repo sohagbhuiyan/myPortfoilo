@@ -50,7 +50,7 @@ const Home = () => {
 
                     <div className='text-xl md:text-2xl font-medium text-[#F40469] mb-8 h-12'>
                         <Typewriter
-                            words={['Software Developer', 'Frontend Expert', 'iOS Engineer', 'React Specialist']}
+                            words={['Software Developer', 'Frontend Expert', 'React Specialist']}
                             loop={true}
                             cursor
                             cursorStyle='|'
@@ -61,9 +61,9 @@ const Home = () => {
                     </div>
 
                     <p className='text-lg md:text-xl text-gray-300 leading-relaxed mb-8'>
-                        Crafting exceptional digital experiences with expertise in React.js, Swift, 
-                        and modern web technologies. Passionate about building responsive applications 
-                        that combine aesthetic appeal with seamless functionality.
+                    Crafting exceptional digital experiences with expertise in React.js, Redux, and modern 
+                    web technologies. Passionate about building responsive, high-performance applications 
+                    that blend aesthetic design with seamless functionality
                     </p>
 
                     <motion.button

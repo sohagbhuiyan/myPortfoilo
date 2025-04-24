@@ -1,5 +1,6 @@
 
-import {  css, ios, js, react, reactss, redux, swift } from '../../Utils/Images';
+import { html } from 'framer-motion/client';
+import {  css, js,htmL, react, redux, } from '../../Utils/Images';
 import SkillParent from './SkillParent'; // Adjust the import path as needed
 
 const Skills = () => {
@@ -13,21 +14,16 @@ const Skills = () => {
       ];
     // Define the data for skills
     const skillsData = [
-      { 
-          images: ios, 
-          title: 'iOS Development', 
-          text: 'Proficient in Swift and SwiftUI for building native iOS applications. Experienced in Core Data, ARKit, and integrating REST APIs for full-featured mobile solutions.' 
-      },
+
       { 
           images: react, 
           title: 'Frontend Development', 
           text: 'Expertise in state management using Redux Toolkit for complex React applications. Skilled in middleware integration and optimized state updates.' 
       },
-  
       { 
-          images: swift, 
-          title: 'Swift Programming', 
-          text: 'Deep understanding of Swift syntax and language features. Proficient in protocol-oriented programming, memory management, and concurrency with async/await.' 
+        images: redux, 
+        title: 'Redux Toolkit', 
+        text: 'Proficient in state management using Redux Toolkit, including slice-based architecture, middleware integration, and efficient handling of complex application states in React.'
       },
       { 
           images: js, 
@@ -39,7 +35,12 @@ const Skills = () => {
         title: 'Tailwind CSS',
         text: 'Proficient in building responsive and modern UI using Tailwind CSS. Skilled in customizing utility classes, optimizing design systems, and integrating seamlessly with React components.'
       },
-  ];
+      {
+        images: htmL,
+        title: 'HTML',
+        text: 'Skilled in writing clean, semantic HTML for building structured and accessible web interfaces. Proficient in creating responsive layouts, organizing content effectively, and integrating with modern CSS frameworks and JavaScript libraries.',
+      },
+    ];
 
     return (
         <div className='p-4 mt-2'>
