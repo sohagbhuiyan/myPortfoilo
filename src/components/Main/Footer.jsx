@@ -5,9 +5,9 @@ const Contact = () => {
         <div> 
             <div className='p-6 '>
                 <hr />
-                <p className='text-cpink-200 text-center text-xl md:text-2xl font-semibold'>Contact Me With</p>
+                <p className='text-cpink-200 p-1 text-center text-xl md:text-2xl font-semibold'>Contact Me With</p>
                 <div className="w-16  h-1 bg-cpink-200 mx-auto rounded-full"></div>
-                <div className='flex justify-center space-x-6 mt-4'>
+                <div className='flex justify-center space-x-6 p-4 mt-4'>
                     <a href='https://web.facebook.com/profile.php?id=100008473331977/' target='_blank' rel='noopener noreferrer'>
                         <FaFacebook className='text-gray-600 text-2xl hover:text-cpink-200'/>
                     </a>

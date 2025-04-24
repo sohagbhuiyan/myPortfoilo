@@ -1,25 +1,21 @@
 
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
-import { msg } from '../../Utils/Images';
 import Chat from './Chat';    
 
 const Contact = () => {
     return (
         <div className="bg-gray-100 text-gray-600 py-5">
-            <div className='flex justify-center items-center '>
+            <div className='text-center items-center '>
                 <p className='md:text-4xl text-2xl font-bold text-cpink-200'>Get in touch
                 <div className="w-16 mt-2 h-1 bg-cpink-200 mx-auto rounded-full"></div></p>
-                <img src={msg} alt="" className='md:h-20 h-12 md:w-32 w-24 px-2 rounded-3xl mt-4' />
             </div>
             
-<div className="px-8">
-  
+<div className="px-4 md:px-12"> 
   <div className="flex flex-col md:flex-row items-center space-y-6 md:space-x-8">
     {/* Left Section - Text */}
     <div className="flex flex-col w-full md:w-1/2">
-     
       <p className="md:text-3xl text-2xl text-blue-400 font-bold mb-4">Let's talk</p>
-      <p className="text-gray-600 p-4 text-sm md:text-lg">
+      <p className="text-gray-600 md:p-4 text-sm md:text-lg">
         I'm Sohag Bhuiyan! I'm available to take new projects, <br /> so feel free to contact me, Thank You!
       
       </p>
