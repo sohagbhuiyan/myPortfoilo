@@ -20,7 +20,7 @@ const Nav = () => {
 
   const handleCvDownload = () => {
     window.open(
-      "https://drive.google.com/file/d/1yV3hHOLtuwJe3l-sbhYMvaxwSrzWnyoT/view?usp=sharing",
+      "https://drive.google.com/file/d/1xDjIDtlWwXeK03oRXFD8UcJ9XbvlbZB4/view?usp=sharing",
       "_blank"
     );
   };
