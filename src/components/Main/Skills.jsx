@@ -5,12 +5,12 @@ import SkillParent from './SkillParent'; // Adjust the import path as needed
 
 const Skills = () => {
     const skills = [
-        "Swift", "C", "C++", "iOS", "Storyboard", "XIB", "NIB", 
-        "MVC", "MVP", "MVVM", "VIPER", "Git", "Xcode", 
-        "JIRA", "Slack", "Trello", "CocoaPods", "Carthage", 
-        "SPM", "OOP", "SOLID", "Auto Layout Constraints",
-        "React",
-        "Redux", "Javascript", "Tailwind", "HTML","CSS",
+        "React", "Redux", "Javascript", "Tailwind", "HTML","CSS",
+        "JIRA", "Slack", "Trello","Swift",  "Xcode",  "C", 
+        "C++", "java", "iOS", "Storyboard", "XIB", "NIB", 
+        "MVC", "MVP", "MVVM", "Git", "CocoaPods", 
+         "OOP", "SOLID", "Auto Layout Constraints",
+     
       ];
     // Define the data for skills
     const skillsData = [
