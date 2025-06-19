@@ -2,7 +2,7 @@ const Experience = () => {
   const experienceData = [
     {
       title: "Frontend Developer",
-      company: "SaverFavor",
+      company: "SaverFavor Limited",
       duration: "June 2024 - Present",
       description: [
         "Crafted dynamic and responsive web applications using React.js, Next.js, and Redux Toolkit, delivering seamless user experiences with optimized performance.",
@@ -15,28 +15,33 @@ const Experience = () => {
   ];
 
   return (
-    <section className="bg-white py-8 px-4 sm:px-6 lg:px-8">
+    <section className="bg-white py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="md:text-4xl text-3xl font-extrabold text-center mt-6 text-cpink-200">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-cpink-200">
           Professional Experience 💼
         </h2>
         <div className="w-20 mt-3 h-1 bg-cpink-200 mx-auto rounded-full"></div>
+
         <div className="mt-10 space-y-8">
           {experienceData.map((exp, index) => (
             <div
               key={index}
-              className="relative border-l-4 border-cpink-200 bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1"
+              className="relative border-l-4 border-cpink-200 bg-gray-50 rounded-lg p-5 sm:p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1"
             >
               <div className="absolute -left-3 top-4 w-6 h-6 bg-cpink-200 rounded-full border-4 border-white"></div>
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3">
-                <h3 className="text-xl font-bold text-gray-800">
+
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-1">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 text-center sm:text-left">
                   {exp.title} <span className="text-cpink-200">•</span> {exp.company}
                 </h3>
-                <span className="text-sm font-medium text-gray-500 mt-1 sm:mt-0">{exp.duration}</span>
+                <span className="text-md font-medium text-gray-500 text-center sm:text-right">
+                  {exp.duration}
+                </span>
               </div>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+
+              <ul className="list-disc list-inside text-gray-700 space-y-2 text-xs sm:text-base">
                 {exp.description.map((item, idx) => (
-                  <li key={idx} className="text-base">{item}</li>
+                  <li key={idx}>{item}</li>
                 ))}
               </ul>
             </div>
