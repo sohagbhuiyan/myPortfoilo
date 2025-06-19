@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 const Nav = () => {
   const Header = [
     { name: "Home", link: "home" },
+    { name: "Experience", link: "experience" },
     { name: "Projects", link: "project" },
     { name: "Skills", link: "skills" },
     { name: "Education", link: "education" },
@@ -26,31 +27,34 @@ const Nav = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-slate-800 backdrop-blur-lg border-b border-slate-700/50">
-      <div className="container mx-auto flex justify-between items-center px-4 py-2 md:py-4">
+    <nav className="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-700/30 shadow-sm">
+      <div className="container mx-auto flex justify-between items-center px-4 py-3">
+        {/* Logo */}
         <motion.div
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
           className="flex items-center"
         >
-          <img 
-            src={p2} 
-            alt="Logo" 
-            className="h-7 md:h-10 transition-transform duration-200 hover:rotate-[15deg]" 
+          <img
+            src={p2}
+            alt="Logo"
+            className="h-8 transition-transform duration-300 hover:rotate-12"
           />
         </motion.div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-4">
           {Header.map((nav, index) => (
-            <div
+            <motion.div
               key={index}
+              whileHover={{ y: -2 }}
               className="relative"
             >
               {nav.isDownload ? (
                 <button
                   onClick={handleCvDownload}
-                  className="px-4 py-2 bg-gradient-to-r from-cpink-200 to-blue-500 font-bold text-white rounded-full 
-                            shadow-md hover:shadow-lg transition-all duration-150"
+                  className="px-3 py-1.5 text-sm font-semibold bg-gradient-to-r from-cpink-200 to-purple-600 text-white rounded-full 
+                            shadow-sm hover:shadow-md transition-all duration-200"
                 >
                   {nav.name}
                 </button>
@@ -61,45 +65,48 @@ const Nav = () => {
                   duration={600}
                   spy={true}
                   offset={-80}
-                  // onSetActive={() => setActiveLink(nav.link)}
-                  className={`px-4 py-2 cursor-pointer text-lg font-medium ${
-                    activeLink === nav.link 
-                      ? "text-cpink-200 border-b-2 border-cpink-200"
-                      : "text-white hover:text-cpink-200/80"
-                  } transition duration-150`}
+                  onSetActive={() => setActiveLink(nav.link)}
+                  className={`px-3 py-1.5 text-sm font-medium ${
+                    activeLink === nav.link
+                      ? "text-cpink-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-cpink-200"
+                      : "text-gray-200 hover:text-cpink-200"
+                  } transition duration-200 cursor-pointer`}
                 >
                   {nav.name}
                 </ScrollLink>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Mobile Toggle Button */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl text-white p-2 hover:text-cpink-200  duration-100"
+          className="md:hidden text-xl text-gray-200 p-1.5 hover:text-cpink-200 transition-colors duration-200"
           aria-label="Navigation menu"
         >
           {open ? <FaXmark /> : <FiMenu />}
         </button>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden fixed top-10 left-0 right-0 bg-slate-800/95 backdrop-blur-xl 
-                        ${open ? "block" : "hidden"} transition-opacity duration-100`}>
-          <ul className="flex flex-col items-center py-2 space-y-1">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: open ? 1 : 0, y: open ? 0 : -20 }}
+          transition={{ duration: 0.3 }}
+          className={`md:hidden fixed top-12 left-0 right-0 bg-slate-900/95 backdrop-blur-lg shadow-lg ${
+            open ? "block" : "hidden"
+          }`}
+        >
+          <ul className="flex flex-col items-center py-4 space-y-2">
             {Header.map((nav, index) => (
-              <li
-                key={index}
-                className="w-full text-center"
-              >
+              <li key={index} className="w-full text-center">
                 {nav.isDownload ? (
                   <button
                     onClick={() => {
                       handleCvDownload();
                       setOpen(false);
                     }}
-                    className="w-full py-2.5 text-lg font-medium text-white bg-cpink-200/90 hover:bg-cpink-200 transition-colors duration-150"
+                    className="w-full py-2 text-md font-semibold text-white bg-cpink-200 hover:bg-cpink-300 transition-colors duration-200"
                   >
                     {nav.name}
                   </button>
@@ -114,19 +121,19 @@ const Nav = () => {
                       setActiveLink(nav.link);
                       setOpen(false);
                     }}
-                    className={`block py-2.5 text-lg font-medium ${
+                    className={`block py-2 text-sm font-medium ${
                       activeLink === nav.link
                         ? "text-cpink-200"
-                        : "text-white hover:text-cpink-200/80"
-                    } transition-colors duration-100`}
+                        : "text-gray-200 hover:text-cpink-200"
+                    } transition-colors duration-200`}
                   >
-                    {nav.name}  
+                    {nav.name}
                   </ScrollLink>
                 )}
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       </div>
     </nav>
   );
