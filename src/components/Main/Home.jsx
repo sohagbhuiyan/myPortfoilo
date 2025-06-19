@@ -24,7 +24,7 @@ const Home = () => {
                 style={{ backgroundImage: `url(${keyboard})` }}
             />
             
-            <div className='container mx-auto flex flex-col md:flex-row items-center justify-between relative z-20'>
+            <div className='flex flex-col md:flex-row items-center justify-between relative z-20'>
                 {/* Text Content */}
                 <motion.div
                     className='text-center md:text-left md:w-1/2 md:pr-8'
