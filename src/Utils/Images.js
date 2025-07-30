@@ -20,6 +20,7 @@ import nex from "../assets/images/nexcent.png"
 import kk from "../assets/images/kk.jpg"
 import is from "../assets/images/ios.webp"
 import swft from "../assets/images/sw.png"
+import wbtask from "../assets/images/wbtask.png"
 
 export const profile = profi;
 export const p1 = prf;
@@ -43,3 +44,4 @@ export const contact = con;
 export const keyboard = kk;
 export const ios = is;
 export const swift = swft;
+export const webtask = wbtask;

@@ -1,18 +1,18 @@
 
-import { html } from 'framer-motion/client';
 import {  css, js,htmL, react, redux, } from '../../Utils/Images';
-import SkillParent from './SkillParent'; // Adjust the import path as needed
+import SkillParent from './SkillParent';
 
 const Skills = () => {
     const skills = [
-        "React", "Redux", "Javascript", "Tailwind", "HTML","CSS",
-        "JIRA", "Slack", "Trello","Swift",  "Xcode",  "C", 
+        "HTML","CSS", "Reactjs", "Nextjs", "Redux", "Redux Toolkit", "Javascript", 
+        "Typescript","Tailwind CSS","Material UI", "ShadCN", 
+        "JIRA", "Asana", "Trello","Swift",  "Xcode",  "C", 
         "C++", "java", "iOS", "Storyboard", "XIB", "NIB", 
-        "MVC", "MVP", "MVVM", "Git", "CocoaPods", 
-         "OOP", "SOLID", "Auto Layout Constraints",
+        "MVC", "MVP", "MVVM", "CocoaPods", 
+         "OOP", "SOLID", "Auto Layout Constraints", "Git", "Github"
      
       ];
-    // Define the data for skills
+  
     const skillsData = [
 
       { 

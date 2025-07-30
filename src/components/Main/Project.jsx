@@ -1,7 +1,7 @@
 
 import { FaGithub } from 'react-icons/fa';
 import { BsArrowUpRightSquareFill } from 'react-icons/bs';
-import { purchaseRequisition1, food, todo, ecommerce, nexcent, woople } from '../../Utils/Images';
+import { purchaseRequisition1, food, todo, ecommerce, nexcent, woople, webtask } from '../../Utils/Images';
 
 const ProjectCard = ({ images, title, desc, live, github }) => {
     return (
@@ -33,6 +33,14 @@ const Project = () => {
             github: 'https://github.com/sohagbhuiyan/saverfavor_e-commerce.git',
         },
         {
+            images: webtask,
+            title: 'Company Portfolio',
+            desc: 'Showcasing a diverse range of completed projects across web development, graphic design, and digital marketing.',
+            live: 'https://website-task-alpha.vercel.app/',
+            github: 'https://github.com/sohagbhuiyan/website_task',
+        },
+        
+        {
             images: nexcent,
             title: 'Nextcent',
             desc: 'A landing website what we provided and what our service.',
@@ -59,13 +67,6 @@ const Project = () => {
             desc: 'Users can view restaurants, their details, and services on this food delivery website.',
             live: 'https://task-food-delivery.vercel.app/',
             github: 'https://github.com/sohagbhuiyan/task-FoodDelivery',
-        },
-        {
-            images: purchaseRequisition1,
-            title: 'Purchase Requisition',
-            desc: 'Users can navigate easily between folders on this purchase requisition page.',
-            live: 'https://window-design-rho.vercel.app/',
-            github: 'https://github.com/sohagbhuiyan/window-Design',
         },
     ];
 
