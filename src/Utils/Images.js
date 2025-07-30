@@ -6,7 +6,7 @@ import lg from "../assets/images/e.png";
 import htm from "../assets/images/html.jpg";
 import cs from "../assets/images/css.webp";
 import jss from "../assets/images/js.png";
-import redx from "../assets/images/r.png";
+import redx from "../assets/images/nxt.png";
 import reacts from "../assets/images/ree.png";
 import ret from "../assets/images/reee.png";
 import wd1 from "../assets/images/wd1.png";

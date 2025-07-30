@@ -5,7 +5,7 @@ import SkillParent from './SkillParent';
 const Skills = () => {
     const skills = [
         "HTML","CSS", "Reactjs", "Nextjs", "Redux", "Redux Toolkit", "Javascript", 
-        "Typescript","Tailwind CSS","Material UI", "ShadCN", 
+        "Typescript","Tailwind CSS","Material UI", "ShadCN", "VS Code",
         "JIRA", "Asana", "Trello","Swift",  "Xcode",  "C", 
         "C++", "java", "iOS", "Storyboard", "XIB", "NIB", 
         "MVC", "MVP", "MVVM", "CocoaPods", 
@@ -18,12 +18,12 @@ const Skills = () => {
       { 
           images: react, 
           title: 'Frontend Development', 
-          text: 'Expertise in state management using Redux Toolkit for complex React applications. Skilled in middleware integration and optimized state updates.' 
+          text: 'Expert in building scalable React and Next.js applications with Redux Toolkit for efficient state management. Proficient in integrating middleware, handling async operations, and optimizing state updates. Skilled in creating responsive, modern UIs using Tailwind CSS.' 
       },
       { 
         images: redux, 
-        title: 'Redux Toolkit', 
-        text: 'Proficient in state management using Redux Toolkit, including slice-based architecture, middleware integration, and efficient handling of complex application states in React.'
+        title: 'Nextjs', 
+        text: 'Proficient in managing state within Next.js applications using Redux Toolkit, utilizing slice-based architecture, middleware integration, and efficient handling of both client-side and server-side states.'
       },
       { 
           images: js, 
