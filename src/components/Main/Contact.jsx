@@ -12,7 +12,6 @@ const Contact = () => {
             
 <div className="px-4 md:px-12"> 
   <div className="flex flex-col md:flex-row items-center space-y-6 md:space-x-8">
-    {/* Left Section - Text */}
     <div className="flex flex-col w-full md:w-1/2">
       <p className="md:text-3xl text-2xl text-blue-400 font-bold mb-4">Let's talk</p>
       <p className="text-gray-600 md:p-4 text-sm md:text-lg">
@@ -27,7 +26,7 @@ const Contact = () => {
         </div>
         <div className="flex items-center space-x-4 bg-gray-200 px-4 py-2 rounded-lg w-80">
           <FaMapMarkerAlt className="text-red-400 text-xl" />
-          <p className="md:text-lg text-sm">Nikunjo, Dhaka</p>
+          <p className="md:text-lg text-sm">Nikunja-2, Dhaka</p>
         </div>
         <div className="flex items-center space-x-4 bg-gray-200 px-4 py-2 rounded-lg w-80">
           <FaPhoneAlt className="text-green-400 text-xl" />
@@ -37,8 +36,7 @@ const Contact = () => {
       </div>
 
     </div>
-
-    {/* Right Section - Form */}
+    
     <div className="w-full md:w-1/2">
       <Chat className="" />
     </div>

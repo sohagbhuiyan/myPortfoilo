@@ -21,6 +21,7 @@ import kk from "../assets/images/kk.jpg"
 import is from "../assets/images/ios.webp"
 import swft from "../assets/images/sw.png"
 import wbtask from "../assets/images/wbtask.png"
+import se from "../assets/images/seo.png"
 
 export const profile = profi;
 export const p1 = prf;
@@ -45,3 +46,4 @@ export const keyboard = kk;
 export const ios = is;
 export const swift = swft;
 export const webtask = wbtask;
+export const seo = se;

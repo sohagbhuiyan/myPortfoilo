@@ -3,7 +3,7 @@ const Experience = () => {
     {
       title: "Frontend Developer",
       company: "SaverFavor Limited",
-      duration: "June 2024 - Present",
+      duration: "September 2024 - Present",
       description: [
         "Crafted dynamic and responsive web applications using React.js, Next.js, and Redux Toolkit, delivering seamless user experiences with optimized performance.",
         "Designed visually appealing, accessible interfaces with Tailwind CSS, enhancing user engagement and ensuring cross-device compatibility.",

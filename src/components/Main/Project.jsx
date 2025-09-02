@@ -1,7 +1,7 @@
 
 import { FaGithub } from 'react-icons/fa';
 import { BsArrowUpRightSquareFill } from 'react-icons/bs';
-import { purchaseRequisition1, food, todo, ecommerce, nexcent, woople, webtask } from '../../Utils/Images';
+import {food, todo, ecommerce, nexcent, webtask, seo } from '../../Utils/Images';
 
 const ProjectCard = ({ images, title, desc, live, github }) => {
     return (
@@ -48,11 +48,11 @@ const Project = () => {
             github: 'https://github.com/sohagbhuiyan/Landing_website_design',
         },
         {
-            images: woople,
-            title: 'Woople',
-            desc: 'Website design of companies achivements and what their services',
-            live: 'https://wppool-task-wine.vercel.app/',
-            github: 'https://github.com/sohagbhuiyan/Wppool_Task',
+            images: seo,
+            title: 'E-Commerce MVP',
+            desc: 'A minimal e-commerce platform built with Next.js, TypeScript, and Tailwind CSS. Features include product listing, product details, and cart functionality.',
+            live: 'https://seo-optimized-e-commerce-cvg6.vercel.app/',
+            github: 'https://github.com/sohagbhuiyan/SEO-Optimized-E-commerce.git',
         },
         {
             images: todo,

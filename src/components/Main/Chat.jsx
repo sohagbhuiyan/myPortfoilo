@@ -51,7 +51,7 @@ const Chat = () => {
               <label className="block text-gray-200 font-medium mb-1">Write your message:</label>
               <textarea 
                   name="message" 
-                  placeholder="Write here..." 
+                  placeholder="Write details here..." 
                   className="w-full px-3 py-2 bg-gray-300 text-gray-900 placeholder-gray-600 rounded-md h-24 focus:outline-none focus:ring-2 focus:ring-sky-500 resize-none" 
                   required
               ></textarea>
