@@ -21,7 +21,7 @@ const Nav = () => {
 
   const handleCvDownload = () => {
     window.open(
-      "https://drive.google.com/file/d/1IXYhEBfTz7HyeZj4qGG6GzAoQL5-cLQ8/view?usp=sharing",
+      "https://docs.google.com/document/d/1-cxzvKxT4GmXFSZTKYicPGhx2jJOso_l/edit",
       "_blank"
     );
   };
