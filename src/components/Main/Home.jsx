@@ -119,7 +119,7 @@ const Home = () => {
                         <motion.img
                             src={profile}
                             alt="Sohag Bhuiyan"
-                            className='rounded-full w-64 h-64 md:w-96 md:h-96 border-4 border-white/20
+                            className='rounded-full w-72 h-72 md:w-96 md:h-96 border-4 border-white/20
                                     object-cover saturate-150 hover:saturate-200'
                             whileTap={{ scale: 0.95 }}
                         />
